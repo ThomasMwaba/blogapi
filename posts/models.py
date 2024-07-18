@@ -7,12 +7,12 @@ from django.conf import settings
 class Post(models.Model):
     title = models.CharField(max_length=100)
     body = models.TextField()
-    author = models.ForeignKey(settings.AUTH_USER_MODEL,on_delete=models.CASCADE)
-    created_at = models.DateField(auto_now_add=True)
-    updated_date = models.DateField(auto_now=True)
+    author = models.ForeignKey(settings.AUTH_USER_MODEL,on_delete=models.CASCADE) # Link to customuser
+    created_at = models.DateField(auto_now_add=True) # Automatically set the date when it was created
+    updated_date = models.DateField(auto_now=True) # Automatically set the date when it was updated
     
     def __str__(self):
         
-        return self.title
+        return self.title # The object is displayed as a string in the database
     
     

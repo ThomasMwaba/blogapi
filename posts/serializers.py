@@ -13,9 +13,9 @@ class PostSerializer(serializers.ModelSerializer):
                   "title",
                   "body",
                   "created_at",
-        )
+        ) # fields to be serialized
         
-        model = Post
+        model = Post # uses Post model 
         
         
 
@@ -25,8 +25,8 @@ class UserSerializer(serializers.ModelSerializer):
         
     class Meta:
             
-        model = get_user_model()
+        model = get_user_model()  # uses customuser model 
             
-        fields = ("id", "username")
+        fields = ("id", "username") # fields to be serialized
         
         

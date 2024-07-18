@@ -4,14 +4,20 @@ from .models import CustomUser
 
 
 class CustomUserCreationForm(UserCreationForm):
+# forms to create new users   
+    
     class Meta(UserCreationForm):
-        model = CustomUser
-        fields = UserCreationForm.Meta.fields + ("name",)
+        
+        model = CustomUser # uses custom model
+        
+        fields = UserCreationForm.Meta.fields + ("name",) # fields to be added
         
 class CustomUserChangeForm(UserChangeForm):
+# forms to change present users 
     
     class Meta:
-        model = CustomUser
-        fields = UserChangeForm.Meta.fields
+        model = CustomUser # uses custom model
+        
+        fields = UserChangeForm.Meta.fields # fields to be added
         
         

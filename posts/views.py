@@ -19,7 +19,7 @@ class PostViewSet(viewsets.ModelViewSet):
     
     
 class UserViewSet(viewsets.ModelViewSet):
-    """contains both the post-list and post detail views"""
+    """contains both the user-list and user-detail views"""
     permission_classes = [IsAdminUser]
     queryset = get_user_model().objects.all()
     serializer_class = UserSerializer
