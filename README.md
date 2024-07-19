@@ -12,6 +12,7 @@ Blog API from the book **Django for APIs by Williams S Vincent**
 
 1. *django-cors-headers*
 >>* Adding CORS headers allows your resources to be accessed on other domains.
+>>* [Read more ](https://pypi.org/project/django-cors-headers/)
 
 2. *django-rest-authtoken*
 >>* A simple token-based authentication backend for Django Rest Framework that stores cryptographically hashed tokens on the server-side.
